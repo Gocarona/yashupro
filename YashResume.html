@@ -27,9 +27,9 @@
     border-radius: 8px;
     background-image: linear-gradient(
       var(--rotate),
-      #3728db,
-      #bacd2b 43%,
-      #c21d00
+      #ffffff,
+      #000000 43%,
+      #ffffff
     );
     position: absolute;
     z-index: -1;
@@ -48,7 +48,35 @@
     animation: none;
     opacity: 0;
 }
+
+.play-btn{
+  width: 50px;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0;
+
+}
+
+.col:hover .play-btn{
+  opacity: 1;
+}
+
+.modal-body{
+  background-color: #000000;
+}
+.modal-header{
+background-color: #000000;
+}
+.btn-close{
+  background-color: #ffffff;
+}
+
  </style>
+
+
   </head>
   <body class="p-3 m-0 border-0 bg-black bd-example" >
 
@@ -56,9 +84,23 @@
 
     <!-- Example Code -->
     <div class="row row-cols-1 row-cols-md-3 g-4">
+
       <div class="col">
-        <div class="card bg-dark border-white">
-          <img src="5G-rollout.jpg" class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></img>
+        <div class="card bg-dark border-white" data-bs-toggle="modal" data-bs-target="#video-1">
+          <img src="C:\Users\Dell\OneDrive\Desktop\yash resume html\5G-rollout.jpg" class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></img>
+          <img src="C:\Users\Dell\OneDrive\Desktop\play.png" class="play-btn">
+          <div class="card-body text-white">
+            <h5 class="card-title">C title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card bg-dark border-white" data-bs-toggle="modal" data-bs-target="#video-2">
+          <img src="C:\Users\Dell\OneDrive\Desktop\yash resume html\5G-rollout.jpg" class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></img>
+          <img src="C:\Users\Dell\OneDrive\Desktop\play.png" class="play-btn">
           <div class="card-body text-white">
             <h5 class="card-title">C title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -66,81 +108,62 @@
         </div>
       </div>
 
-      <div class="col">
-        <div class="card bg-dark border-white">
-          <img src="5G-rollout.jpg" class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></img>
-          <div class="card-body text-white">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card bg-dark border-white">
-          <img src="5G-rollout.jpg" class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></img>
-          <div class="card-body text-white">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card bg-dark border-white">
-          <img src="5G-rollout.jpg" class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></img>
-          <div class="card-body text-white">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-      </div>
-      </div>
-      <div class="col">
-        <div class="card bg-dark border-white">
-          <img src="5G-rollout.jpg" class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></img>
-          <div class="card-body text-white">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-      </div>
-      </div>
-      <div class="col">
-        <div class="card bg-dark border-white">
-          <img src="5G-rollout.jpg" class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></img>
-          <div class="card-body text-white">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-      </div>
-      </div>
-      <div class="col">
-        <div class="card bg-dark border-white">
-          <img src="5G-rollout.jpg" class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></img>
-          <div class="card-body text-white">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-      </div>
-      </div>
-      <div class="col">
-        <div class="card bg-dark border-white">
-          <img src="5G-rollout.jpg" class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></img>
-          <div class="card-body text-white">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-      </div>
-      </div>
-      <div class="col">
-        <div class="card bg-dark border-white">
-          <img src="5G-rollout.jpg" class="bd-placeholder-img card-img-top" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></img>
-          <div class="card-body text-white">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-      </div>
-      </div>
+      
     </div>
     
     <!-- End Example Code -->
+
+    <!-- Modal -->
+
+
+
+
+  <div class="modal fade" id="video-2">
+
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">*note that if you want to close the video please pause the video and go back</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <video width="100%" height="100%" controls autoplay>
+          <source src="C:\Users\Dell\OneDrive\Desktop\videoplayback.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="video-1">
+
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">*note that if you want to close the video please pause the video and go back</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <video width="100%" height="100%" controls autoplay>
+          <source src="C:\Users\Dell\OneDrive\Desktop\thomas.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
   </body>
 </html>
