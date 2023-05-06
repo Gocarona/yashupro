@@ -73,6 +73,17 @@ background-color: #000000;
 .btn-close{
   background-color: #ffffff;
 }
+.nav-link{
+  color: #ffffff;
+}
+
+body{
+  height: 100vh;
+  background-color: #000;
+  background-image: url('space.jpg');
+background-size: cover;
+background-position: center;
+}
 
  </style>
 
@@ -80,7 +91,18 @@ background-color: #000000;
   </head>
   <body class="p-3 m-0 border-0 bg-black bd-example" >
 
-    <h1>Projects & works</h1>
+     <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+  </li>
+  
+</ul>
 
     <!-- Example Code -->
     <div class="row row-cols-1 row-cols-md-3 g-4">
